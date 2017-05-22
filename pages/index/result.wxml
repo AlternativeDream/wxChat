@@ -1,0 +1,6 @@
+<!--result.wxml-->
+<view class="container">
+  <view class="">答对：{{right}}</view>
+  <view class="">答错：{{mistake}}</view>
+  <view class="">未答：{{noans}}</view>
+</view>

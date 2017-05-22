@@ -1,0 +1,12 @@
+<!--exam.wxml-->
+<view class="container">
+  <view class="question">{{question.id}}、{{question.problem}}</view>
+  <view class="options" wx:for="{{question.options}}" >
+    <button id="{{item.oId}}" bindtap="option" style="background: {{item.background}}; color: {{item.color}}" >{{item.oOrder}}、{{item.oText}}</button>
+  </view>
+  <view class="choose">我的选择：{{answer}}</view>
+  <view class="switch">
+    <button id="lastques" bindtap="lastques">上一题</button>
+    <button id="nextques" bindtap="nextques">下一题</button>
+  </view>
+</view>
